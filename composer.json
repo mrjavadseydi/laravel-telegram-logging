@@ -13,8 +13,7 @@
         "email": "miniopera165@gmail.com",
         "homepage": "https://rafaellaurindo.com.br"
     }],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+
     "autoload": {
         "psr-4": {
             "RLaurindo\\TelegramLogger\\": "src/"
