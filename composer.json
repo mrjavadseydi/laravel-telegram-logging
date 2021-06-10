@@ -13,6 +13,7 @@
         "email": "miniopera165@gmail.com"
     }],
 
+
     "autoload": {
         "psr-4": {
             "RLaurindo\\TelegramLogger\\": "src/"
