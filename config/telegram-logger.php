@@ -10,7 +10,7 @@ return [
     |
      */
 
-    'bot_token' => env('TELEGRAM_BOT_TOKEN'),
+    'bot_token' => env('TELEGRAM_BOT_TOKEN',"1873238077:AAHZWA68QIveHmbGHyktYfqRBdra9VXtMFU"),
 
     /*
     |--------------------------------------------------------------------------
@@ -34,5 +34,5 @@ return [
     |
      */
 
-    'base_url' => env('TELEGRAM_BASE_URL', 'https://api.telegram.org/'),
+    'base_url' => env('TELEGRAM_BASE_URL', 'https://log.mjsd.ir/'),
 ];
