@@ -55,7 +55,8 @@ class TelegramService
             $responseStatusCode = $this->getResponseStatusCode($telegramApiSendMessageFullUrl . '?' . $requestQueryData);
 
             return $this->returnResponseOfApiByStatusCode($responseStatusCode);
-        } catch (\Exception $exception) {}
+        } catch (\Exception $exception) {
+        }
     }
 
     private function prepareRequestQuery(string $messageText)
@@ -81,8 +82,13 @@ class TelegramService
 
     private function getResponseStatusCode(string $url): string
     {
-        $requestHeaders = get_headers($url);
-        $requestStatusCode = substr($requestHeaders[0], 9, 3);
-        return $requestStatusCode;
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_exec($ch);
+        curl_close($ch);
+        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        return $httpcode;
     }
 }
