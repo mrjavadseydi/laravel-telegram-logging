@@ -4,7 +4,7 @@
     "homepage": "https://github.com/mrjavadseydi/laravel-telegram-logging",
     "require": {
         "php": ">=7.2",
-        "laravel/framework": "7.*|8.*",
+        "laravel/framework": "5.*|7.*|8.*",
         "monolog/monolog": "2.*"
     },
     "license": "MIT",
