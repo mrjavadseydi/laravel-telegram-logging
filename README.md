@@ -11,7 +11,7 @@ Send Laravel logs to a Telegram chat via Telegram Bot.
 To install the package you can use [Composer](https://getcomposer.org/).
 
 ```bash
-composer require rafaellaurindo/laravel-telegram-logging
+composer require mrjavadseydi/laravel-telegram-loggingogging
 ```
 
 Publish the package configuration file using the following artisan command:
