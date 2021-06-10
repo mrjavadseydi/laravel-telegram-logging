@@ -10,8 +10,7 @@
     "license": "MIT",
     "authors": [{
         "name": "mohammad javad seydi",
-        "email": "miniopera165@gmail.com",
-        "homepage": "https://rafaellaurindo.com.br"
+        "email": "miniopera165@gmail.com"
     }],
     "minimum-stability": "dev",
     "prefer-stable": true,
