@@ -12,8 +12,7 @@
         "name": "mohammad javad seydi",
         "email": "miniopera165@gmail.com"
     }],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+
     "autoload": {
         "psr-4": {
             "RLaurindo\\TelegramLogger\\": "src/"
