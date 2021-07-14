@@ -1,28 +1,32 @@
 {
-    "name": "mrjavadseydi/laravel-telegram-logging",
-    "description": "Send Laravel logs to a Telegram chat via Telegram Bot.",
-    "homepage": "https://github.com/mrjavadseydi/laravel-telegram-logging",
-    "require": {
-        "php": ">=7.2",
-        "laravel/framework": "7.*|8.*",
-        "monolog/monolog": "2.*"
-    },
-    "license": "MIT",
-    "authors": [{
-        "name": "mohammad javad seydi",
-        "email": "miniopera165@gmail.com"
-    }],
-
-    "autoload": {
-        "psr-4": {
-            "RLaurindo\\TelegramLogger\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "RLaurindo\\TelegramLogger\\TelegramLoggerServiceProvider"
-            ]
-        }
+  "name": "rafaellaurindo/laravel-telegram-logging",
+  "description": "Send Laravel logs to a Telegram chat via Telegram Bot.",
+  "homepage": "https://github.com/rafaellaurindo/laravel-telegram-logging",
+  "require": {
+    "php": ">=7.2",
+    "laravel/framework": "7.*|8.*",
+    "monolog/monolog": "2.*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rafael Laurindo",
+      "email": "rafaelfilholm@gmail.com",
+      "homepage": "https://rafaellaurindo.com.br"
     }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "RLaurindo\\TelegramLogger\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RLaurindo\\TelegramLogger\\TelegramLoggerServiceProvider"
+      ]
+    }
+  }
 }
